@@ -2,7 +2,7 @@
 <div class="mainDiv">
     <div class="row justify-content-center" >
         <div class="col-4" >
-          <textarea id="story" name="story" rows="5" cols="50" matAutocompletePosition="below" matInput [matAutocomplete]="auto" (keyup)="getUserInformation($event)"> </textarea>
+          <textarea id="story" name="story" rows="5" cols="50" matAutocompletePosition="below" matInput [matAutocomplete]="auto"  (keyup)="getUserInformation($event)"> </textarea>
           <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" >
             <ng-container *ngFor="let option of userInforation" >
               <mat-option [value]="option" *ngIf="showUserInformation == true" (onSelectionChange)="highligtSelectedUser()">
