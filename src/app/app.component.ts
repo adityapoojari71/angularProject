@@ -20,7 +20,7 @@ export class AppComponent {
 
   //method for get user Information
   getUserInformation(event:any){
-    $('#story').css({'color':'','font-size':''});
+    $('#story').css({'color':''});
     if(event.target.value.includes('@')){
       this.showUserInformation = true;
     }
@@ -38,6 +38,6 @@ export class AppComponent {
   }
 
   highligtSelectedUser(){
-    $('#story').css({'color':'orange','font-size':'25px'});
+    $('#story').css({'color':'orange'});
   }
 }
