@@ -1,0 +1,50 @@
+.mainDiv{
+  margin-top: 100px;
+}
+
+/* css for textarea */
+textarea{
+  border-radius: 10px;
+  outline-color: orange;
+  border:solid 1px orange;
+}
+
+/* css for reset and add button */
+.button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+button:focus {
+  /* border: none; */
+  outline: none;
+}
+
+button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* css for addnote button */
+.addNote{
+  background-color:  white ;
+  border: dotted #f1f2f6;
+  color: rgb(243, 216, 166);
+  padding: 15px 28px;
+  margin: 4px 2px;
+}
+
+/* css for reset button */
+.reset{
+  border: solid #f0e7d6;
+  color: orange;
+  background-color: #f0e7d6;
+  padding: 15px 32px;
+  margin: 4px 2px;
+}
+

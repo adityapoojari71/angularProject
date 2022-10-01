@@ -1,0 +1,24 @@
+
+<div class="mainDiv">
+    <div class="row justify-content-center" >
+        <div class="col-4" >
+          <textarea id="story" name="story" rows="5" cols="50" matAutocompletePosition="below" matInput [matAutocomplete]="auto" (keyup)="getUserInformation($event)"> </textarea>
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" >
+            <ng-container *ngFor="let option of userInforation" >
+              <mat-option [value]="option" *ngIf="showUserInformation == true" (onSelectionChange)="highligtSelectedUser()">
+                {{option}}
+              </mat-option>
+            </ng-container>
+          </mat-autocomplete>
+
+        </div>
+    </div>
+    <div class="row mt-3 justify-content-center" >
+        <div class="col-2">
+            <button class="button addNote font-weight-bold"><i class="fas fa-plus"></i> Add Note</button>
+        </div>
+        <div class="col-2">
+            <button class="button reset font-weight-bold" (click)="clearUser()">Reset</button>
+        </div>
+    </div>
+</div>
