@@ -37,6 +37,6 @@ export class AppComponent {
   }
 
   highligtSelectedUser(){
-    $('#story').css({'color':'orange','font-weight':'bold','font-size':'larger'});
+    $('#story').css({'color':'orange','font-weight':'bold','font-size':'larger','padding-left':'5px'});
   }
 }
