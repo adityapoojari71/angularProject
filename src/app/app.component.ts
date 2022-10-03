@@ -15,7 +15,6 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    console.log(this.userInforation);
   }
 
   //method for get user Information
